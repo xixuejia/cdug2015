@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html data-ng-app="panel">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Panel Discussion</title>
+<script src="js/angular.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="css/panelstyles.css" rel="stylesheet" />
+<script type="text/javascript">
+	console.log("Hello");
+</script>
+<script type="text/javascript">
+	var panel = angular.module("panel", []);
+	panel.controller("panelCtrl", function($scope) {
+		$scope.msgs = [ {
+			text : "hello world",
+			side : "left",
+			time : new Date()
+		} ];
+
+		$scope.sendMsg = function() {
+			console.log("sendMsg called!!!", $scope.msgText);
+			if (!$scope.msgText || $scope.msgText.trim() === "") {
+				alert("请输入适当的字数评论！");
+				return;
+			}
+			$scope.msgs.push({
+				text : $scope.msgText,
+				side : "right",
+				time : new Date()
+			});
+			$scope.msgText = "";
+			// Animate
+			/* $("#viewport-content").animate(
+					{
+						bottom : $("#viewport-content").height()
+								- $("#viewport").height()
+					}, 250); */
+		}
+
+		$scope.isDisabled = function(){
+			return !$scope.msgText || $scope.msgText.trim() === "";
+		};
+
+	});
+</script>
+</head>
+<body ng-controller="panelCtrl">
+	<div id="browser-window">
+		<div id="viewport">
+			<div id="viewport-content">
+				<ul class="bubble-container" ng-repeat="msg in msgs">
+					<li class="avatar avatar-{{msg.side}}"><img
+						src="img/avatar.png" /></li>
+					<li class="bubble bubble-{{msg.side}}">{{msg.text}}</li>
+				</ul>
+			</div>
+		</div>
+
+		<form class="row" ng-submit="sendMsg()">
+			<div class="input-group">
+				<input type="text" class="form-control" ng-model="msgText"
+					placeholder="说说我的看法..." /> <span class="input-group-btn">
+					<button type="submit" class="btn btn-primary"
+						ng-disabled="isDisabled()">发送</button>
+				</span>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
