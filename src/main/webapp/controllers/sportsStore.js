@@ -1,7 +1,7 @@
 angular.module("sportsStore").constant("dataUrl",
 		"http://9.115.116.103:5500/products").constant("orderUrl",
-		"http://9.15.116.103:5500/orders").controller("sportsStoreCtrl",
-		function($scope, $http, dataUrl, orderUrl, cart) {
+		"http://9.115.116.103:5500/orders").controller("sportsStoreCtrl",
+		function($scope, $http, $location, dataUrl, orderUrl, cart) {
 			// $scope.data = {
 			// products : [ {
 			// name : "Product #1",
@@ -37,6 +37,7 @@ angular.module("sportsStore").constant("dataUrl",
 			$scope.sendOrder = function(shippingDetails) {
 				console.log("sendOrder method called!");
 				var order = angular.copy(shippingDetails);
+				order.products = angular.copy(cart.getProducts());
 				$http.post(orderUrl, order).success(function(data) {
 					$scope.data.orderId = data.id;
 				}).error(function(error){
