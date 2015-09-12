@@ -8,7 +8,6 @@ $(document).ready(function() {
     	 $('#speaker3').load('views/speaker3.html'); */
 
     $.get('views/speakerTemplate.html', function(template) {
-
         $.get('data/speakers.json?' + new Date().getTime(), function(speakers) {
             $.each(speakers, function(index, speaker) {
                 speaker.id = "speaker" + index;
@@ -23,6 +22,13 @@ $(document).ready(function() {
                 var item = $.tmpl(template, speaker);
                 item.appendTo('.carousel-inner');
             });
-        });
-    });
+        }).fail(function() {
+			alert("加载失败！");
+		}).always(function() {
+			$('.ui.loader.active').removeClass('active');
+		});
+    }).fail(function() {
+		$('ui.loader.active').removeClass('active');
+		alert("加载失败！");
+	});;
 });

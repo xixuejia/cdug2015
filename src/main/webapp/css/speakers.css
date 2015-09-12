@@ -14,12 +14,12 @@ body:after {
 }
 
 .carousel-indicators li {
-	border-color: blue;
+	border-color: #337ab7;
 	margin: 10px;
 }
 
 .carousel-indicators .active {
-	background-color: blue;
+	background-color: #337ab7;
 	margin: 10px;
 }
 
