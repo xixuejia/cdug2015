@@ -1,0 +1,30 @@
+<div id='${id}' class='${itemClass}'>
+	<h4 class='text-center' style='font-weight: bold;'>2015中国主机用户社区大会日程表</h4>
+	{{each page}}
+	<div align='center'>
+		<div class="text-center phaseTitle">${title}</div>
+	</div>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>时间</th>
+				<th>演讲题目</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{each topics}}
+			<tr>
+				<td class="col-xs-4">${$value.time}</td>
+				<td class="col-xs-8">${$value.topic}</td>
+			</tr>
+			{{/each}}
+			<!-- End of iteration on topics -->
+		</tbody>
+	</table>
+	<div align='center'>
+		<div class="text-center location">${location}</div>
+	</div>
+	{{/each}}
+	<!-- End of iteration on page -->
+</div>
