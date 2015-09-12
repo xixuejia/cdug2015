@@ -16,44 +16,36 @@
 		data-ride="carousel" data-interval=false>
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
-			<div id="speaker1" class="item active"></div>
+			<!-- <div id="speaker1" class="item active"></div>
 			<div id="speaker2" class="item"></div>
-			<div id="speaker3" class="item"></div>
-
-			<div id="carousel-controls">
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-speakers"
-					data-slide="prev"> <span
-					class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-speakers" data-slide-to="0"
-						class="active"></li>
-					<li data-target="#carousel-spekaers" data-slide-to="1"></li>
-					<li data-target="#carousel-speakers" data-slide-to="2"></li>
-				</ol>
-				<a class="right carousel-control" href="#carousel-speakers"
-					data-slide="next"> <span
-					class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-			</div>
+			<div id="speaker3" class="item"></div> -->
 		</div>
 
 
+		<div id="carousel-controls">
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-speakers"
+				data-slide="prev"> <span
+				class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<!-- <li data-target="#carousel-speakers" data-slide-to="0"
+					class="active"></li>
+				<li data-target="#carousel-spekaers" data-slide-to="1"></li>
+				<li data-target="#carousel-speakers" data-slide-to="2"></li> -->
+			</ol>
+			<a class="right carousel-control" href="#carousel-speakers"
+				data-slide="next"> <span
+				class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
 	</div>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- bootstrap.min.js includes carousel.min.js and other features -->
 	<script src="js/jquery.bcSwipe.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.carousel').bcSwipe({
-				threshold : 50
-			});
-			$('#speaker1').load('views/speaker1.html');
-			$('#speaker2').load('views/speaker2.html');
-			$('#speaker3').load('views/speaker3.html');
-		});
-	</script>
+	<script src="js/jquery.tmpl.min.js"></script>
+	<script src="js/speakers.js"></script>
 </body>
 </html>
