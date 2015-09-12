@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $.get('views/speakerTemplate.html', function(template) {
 
-        $.get('data/speakers.json', function(speakers) {
+        $.get('data/speakers.json?' + new Date().getTime(), function(speakers) {
             $.each(speakers, function(index, speaker) {
                 speaker.id = "speaker" + index;
                 if (index === 0) {
