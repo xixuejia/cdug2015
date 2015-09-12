@@ -1,0 +1,66 @@
+body:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/z13.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+.table {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.phaseTitle {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 70%;
+	border: 2px solid #8AC007;
+	color: #8AC007;
+}
+
+.location {
+	background-color: #337ab7;
+	color: #fff;
+	padding: 10px;
+}
+
+ul.nav.nav-tabs {
+	display: table;
+	width: 100%;
+	position: fixed;
+	/*table-layout: fixed;*/
+}
+
+ul.nav.nav-tabs>li {
+	float: none;
+	display: table-cell;
+}
+
+/* ul.nav.nav-tabs>li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	height: 80%;
+	width: 1px;
+	border-left: 3px solid magenta;
+} */
+
+ul.nav.nav-tabs>li>a {
+	text-align: center;
+	margin-bottom: -1px;
+/* 	border-radius: 0 0 0 0; */
+}
+
+#agenda {
+	padding-top: 50px;
+}
