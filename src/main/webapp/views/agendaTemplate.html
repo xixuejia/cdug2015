@@ -1,4 +1,4 @@
-<div id='${id}' class='${itemClass}'>
+<div id='${id}' role='tabpanel' class='tab-pane ${active}'>
 	<h4 class='text-center' style='font-weight: bold;'>2015中国主机用户社区大会日程表</h4>
 	{{each page}}
 	<div align='center'>
@@ -23,7 +23,7 @@
 		</tbody>
 	</table>
 	<div align='center'>
-		<div class="text-center location">${location}</div>
+		<div class="text-center location"><span class="glyphicon glyphicon-map-marker"></span> ${location}</div>
 	</div>
 	{{/each}}
 	<!-- End of iteration on page -->
