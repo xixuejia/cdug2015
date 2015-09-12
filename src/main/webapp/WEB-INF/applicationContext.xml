@@ -26,6 +26,5 @@
 			</bean>
 		</property>
 	</bean>
- 
-	<import resource="mongodb.xml"/>
+
 </beans>
