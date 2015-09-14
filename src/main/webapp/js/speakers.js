@@ -1,14 +1,16 @@
 $(document).ready(function() {
+	$.ajaxSetup({ cache: false});
     $('.carousel').bcSwipe({
         threshold: 50
     });
+    
 
     /* 			$('#speaker1').load('views/speaker1.html');
     	 $('#speaker2').load('views/speaker2.html');
     	 $('#speaker3').load('views/speaker3.html'); */
 
     $.get('views/speakerTemplate.html', function(template) {
-        $.get('data/speakers.json?' + new Date().getTime(), function(speakers) {
+        $.get('data/speakers.json', function(speakers) {
             $.each(speakers, function(index, speaker) {
                 speaker.id = "speaker" + index;
                 if (index === 0) {
