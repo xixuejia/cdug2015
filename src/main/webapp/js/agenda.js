@@ -1,4 +1,5 @@
 $('#loader').spin('large', '#337ab7');
+$.ajaxSetup({ cache: false, time: 10000});
 $(document).ready(function() {
 	var tabTemplate = '<li role="presentation" class="${active}"><a href="#${id}" aria-controls="${date}" role="tab" data-toggle="tab">${date}</a></li>';
 	setTimeout(function(){$.get('views/agendaTemplate.html', function(template) {
@@ -26,5 +27,5 @@ $(document).ready(function() {
 	}).fail(function() {
 		$('#loader').spin(false);
 		alert("加载失败！");
-	})},1000);
+	})},500);
 });

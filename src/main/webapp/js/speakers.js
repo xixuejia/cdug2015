@@ -1,6 +1,6 @@
 $('#loader').spin('large', '#337ab7');
+$.ajaxSetup({ cache: false, timeout: 10000});
 $(document).ready(function() {
-	$.ajaxSetup({ cache: false});
     $('.carousel').bcSwipe({
         threshold: 50
     });
@@ -31,5 +31,5 @@ $(document).ready(function() {
     }).fail(function() {
     	$('#loader').spin(false);
 		alert("加载失败！");
-	})},1000);
+	})},500);
 });
