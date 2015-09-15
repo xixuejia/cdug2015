@@ -8,9 +8,15 @@
 	<br>
 	<p>演讲题目</p>
 	<div>
-		{{each topics}}
-		<p>${$index+1}. ${$value}</p>
-		{{/each}}
+		{{if topics.length > 1}} 
+			{{each topics}}
+			<p>${$index+1}. ${$value}</p>
+			{{/each}}
+		{{else}}
+			{{each topics}}
+			<p>${$value}</p>
+			{{/each}}
+		{{/if}}
 	</div>
 	<br>
 </div>
