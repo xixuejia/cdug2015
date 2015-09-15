@@ -1,6 +1,7 @@
+$('#loader').spin('large', '#337ab7');
 $(document).ready(function() {
 	var tabTemplate = '<li role="presentation" class="${active}"><a href="#${id}" aria-controls="${date}" role="tab" data-toggle="tab">${date}</a></li>';
-	$.get('views/agendaTemplate.html', function(template) {
+	setTimeout(function(){$.get('views/agendaTemplate.html', function(template) {
 		$.get('data/agenda.json?' + new Date().getTime(), function(agendas) {
 			$.each(agendas, function(index, agenda) {
 				agenda.id = "agenda" + index;
@@ -20,10 +21,10 @@ $(document).ready(function() {
 		}).fail(function() {
 			alert("加载失败！");
 		}).always(function() {
-			$('.ui.loader.active').removeClass('active');
+			$('#loader').spin(false);
 		});
 	}).fail(function() {
-		$('ui.loader.active').removeClass('active');
+		$('#loader').spin(false);
 		alert("加载失败！");
-	});
+	})},1000);
 });

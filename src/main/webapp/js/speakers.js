@@ -1,15 +1,14 @@
+$('#loader').spin('large', '#337ab7');
 $(document).ready(function() {
 	$.ajaxSetup({ cache: false});
     $('.carousel').bcSwipe({
         threshold: 50
     });
-    
-
     /* 			$('#speaker1').load('views/speaker1.html');
     	 $('#speaker2').load('views/speaker2.html');
     	 $('#speaker3').load('views/speaker3.html'); */
 
-    $.get('views/speakerTemplate.html', function(template) {
+   setTimeout(function(){$.get('views/speakerTemplate.html', function(template) {
         $.get('data/speakers.json', function(speakers) {
             $.each(speakers, function(index, speaker) {
                 speaker.id = "speaker" + index;
@@ -27,10 +26,10 @@ $(document).ready(function() {
         }).fail(function() {
 			alert("加载失败！");
 		}).always(function() {
-			$('.ui.loader.active').removeClass('active');
+			$('#loader').spin(false);
 		});
     }).fail(function() {
-		$('ui.loader.active').removeClass('active');
+    	$('#loader').spin(false);
 		alert("加载失败！");
-	});;
+	})},1000);
 });
