@@ -11,6 +11,7 @@ body:after {
 	height: 100%;
 	opacity: 0.2;
 	z-index: -1;
+	position: fixed;
 }
 
 .carousel-indicators li {

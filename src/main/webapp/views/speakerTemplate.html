@@ -6,16 +6,22 @@
 	<h5 align='center'>${title}</h5>
 	<p>${brief}</p>
 	<br>
+	{{if topics}}
+	{{if topics.length >= 1}}
 	<p>演讲题目</p>
+	{{/if}}
+	{{/if}}
 	<div>
-		{{if topics.length > 1}} 
-			{{each topics}}
-			<p>${$index+1}. ${$value}</p>
-			{{/each}}
-		{{else}}
-			{{each topics}}
-			<p>${$value}</p>
-			{{/each}}
+		{{if topics}}
+			{{if topics.length > 1}} 
+				{{each topics}}
+					<p>${$index+1}. ${$value}</p>
+				{{/each}}
+			{{else topics}}
+				{{each topics}}
+					<p>${$value}</p>
+				{{/each}}
+			{{/if}}
 		{{/if}}
 	</div>
 	<br>

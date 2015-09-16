@@ -23,13 +23,14 @@ $(document).ready(function() {
                 var item = $.tmpl(template, speaker);
                 item.appendTo('.carousel-inner');
             });
-        }).fail(function() {
-			alert("加载失败！");
+        }).fail(function(e) {
+        	console.log("error:" + JSON.stringify(e));
+			alert("名师风采信息加载失败！");
 		}).always(function() {
 			$('#loader').spin(false);
 		});
     }).fail(function() {
     	$('#loader').spin(false);
-		alert("加载失败！");
+		alert("模板加载失败！");
 	})},500);
 });
