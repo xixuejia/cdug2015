@@ -42,6 +42,9 @@ ul.nav.nav-tabs {
 ul.nav.nav-tabs>li {
 	float: none;
 	display: table-cell;
+	border: 0px solid transparent;
+	/* margin-bottom: -3px; */
+	border-top-width: 0px;
 }
 
 /* ul.nav.nav-tabs>li:before {
@@ -55,18 +58,27 @@ ul.nav.nav-tabs>li {
 } */
 ul.nav.nav-tabs>li>a {
 	text-align: center;
-	margin-bottom: -1px;
+	/* 	margin-bottom: -3px; */
 	border-radius: 0 0 0 0;
+	border: 3px solid transparent;
 	margin: 0 0 0 0;
 	background-color: white;
 	color: black;
+	margin: 0 0 0 0;
+	magin-top: -3px;
 }
 
 ul.nav.nav-tabs>li.active>a {
+	border-color: white;
 	border-bottom-color: #337ab7;
 	border-bottom-width: 3px;
+	border-top-width: 3px;
+	border-style: solid;
 	color: #337ab7;
 	font-weight: bold;
+	color: #337ab7;
+	color: #337ab7;
+	border-bottom-color: #337ab7;
 }
 
 #agenda {
