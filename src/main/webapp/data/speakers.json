@@ -1,34 +1,78 @@
 [{
-	"name": "Henry Mendez-1",
+	"name": "Gene Ful",
 	"subname": "hello",
-	"title": "兆丰国际商业银行CTO",
-	"image": "avatar.png",
-	"brief": "This imporvement upon the original usage was introduced by no less a man than Stubb, in order to afford the imperilled harpooneer the strongest possible guarantee for the faithfulness and vigilance of his monkey-rope holder"
+	"title": "Director and Distinguished Engineer, IBM z Systems",
+	"image": "GeneFuh.png",
+	"brief": "Dr. Gene Fuh is the Director & Distinguished Engineer for IBM z Systems Technical Enablement & Business Development. In this role, he is responsible for enabling the world-wide system z technical community for technologies in Cloud, Analytics, Mobile, Social, Security, etc and developing partnership with business partners based on these technologies. Dr. Fuh is a member of IBM Academy and an IBM Master Inventor. He is currently taking an international assignment in China while holding the WW mission and responsibility.Prior to his current role, Dr. Fuh has held multiple leadership positions in IBM Information Management with the focus in Compilers, Database Systems, Data Warehouse, Big Data, and Analytics."
 },{
-	"name": "Henry Mendez-2",
-	"title": "兆丰国际商业银行CTO",
-	"image": "avatar.png",
-	"brief": "是生态文明领域改革的顶层设计。推进生态文明体制改革首先要树立和落实正确的理念，统一思想，引领行动。ness and vigilance of his monkey-rope holder",
-	"topics": ["z13--mobile workload",
-	"亮点自寻",
-	"4TB RSM support"]
+	"name": "Kelvin Li",
+	"title": "Executive, z Systems Brand Server Solution, Systems Hardware, IBM GCG",
+	"image": "KelvinLi.png",
+	"brief": "Kelvin Li is the IBM z Systems Brand Executive focusing on GCG z Systems brand management together with z new account development. He graduated from the University of Wisconsin, Madison, with a BC degree of Computer Science and joined IBM Hong Kong in 1996. In the year of 2006, Kelvin was assigned to IBM China as the SSM for Bank of China international assignee account. Since the year of 2011, Kelvin has been working as z Systems Growth Executive to develop z Systems growth strategy across GCG area with focus on China banking customers."
 },{
-	"name": "Henry Mendez-3",
-	"title": "兆丰国际商业银行CTO",
-	"image": "avatar.png",
-	"brief": "要树立尊重自然、顺应自然、保护自然的理念，发展和保护相统一的理念，绿水青山就是金山银山的理念，自然价值和自然资本的理念，空间均衡的理念，山水林田湖是一个生命共同体的理念。推进生态文明体制改革要坚持正确方向，坚持自然资源资产的公有性质 guarantee for the faithfulness and vigilance of his monkey-rope holder",
-	"topics": ["CDUG 2015上海September",
-	"CDUG 2015",
-	"IMS workload",
-	"LSPR workload"]
+	"name": "Qin Liu",
+	"title": "Doctor, Professor, Executive Dean, School of Software Engineering Tongji University",
+	"image": "QinLiu.png",
+	"brief": "Dr. LIU is the founder and chairman of ISTQB (International Software Testing Qualification Board) China Branch, she is also the registered Member of China Computing Federation and registered with the Higher Education Academy UK. Professor Liu's principle research interest is in software measurement, data analysis, data mining, cloud service platform and its application. She has taught courses in software project analysis and modeling, software test and software engineering at several academic institutions. Dr. LIU has published research in Software Quality Journal, British Computer Science Software Quality Conference, ICSE SSEE and IEEE SSIRI workshops, she is the co-editor of ISO29119 Part 4."
 },{
-	"name": "Henry Mendez-4",
-	"title": "兆丰国际商业银行CTO",
-	"image": "avatar.png",
-	"brief": "会议强调，推进生态文明体制改革要搭好基础性框架，构建产权清晰、多元参与、激励约束并重、系统完整的生态文明制度体系。要建立归属清晰、权责明确、监管有效的自然资源资产产权制度",
-	"topics": ["z System Software Trends and Direction",
-	"z/OS V2R1的新亮点",
-	"CICS performance",
-	"DB2 performance",
-	"z/OSMF performance"]
-}]
+	"name": "Jeff Frey",
+	"title": "IBM Fellow, CTO z Systems Platform",
+	"image": "JeffFrey.png",
+	"topics": ["z Systems Position in CAMS/Linux"],
+	"brief": "Jeff joined IBM in 1983 as a programmer working on the development of IBM's MVS operating system after earning his Bachelor of Science degree in computer science from the Rochester Institute of Technology. Jeff was elected to the IBM Academy of Technology in 1995, and named a Poughkeepsie site master inventor in 2001. Jeff has a long history of leadership and innovation in driving the transformation of IBM's platforms and capabilities. Primarily through changes to IBM's System z operating system and middleware, Jeff has been instrumental to the strategic viability and revitalization of IBM's large system franchise over the course of his career. Jeff was one of the founding architects of Parallel Sysplex, a re-engineering of the system 390 software considered vital in the transformation of IBM’s large system franchise to CMOS microprocessors. He served as chief architect for the Sysplex-optimized design of the WebSphere Application Server for z/OS.  Jeff drove innovations in the areas of autonomic systems management, dynamic resource provisioning, and goal-oriented resource optimization, which are core tenants in IBM's Dynamic Infrastructure and Cloud Computing strategies."
+},{
+	"name": "Charles Webb",
+	"title": "IBM Fellow",
+	"image": "CharlesWebb.png",
+	"topics": ["z HW Trend & Direction"],
+	"brief": "Charles Webb joined IBM in 1983 and has held positions in performance analysis, processor design, and system design, all focused on the IBM mainframe computing platform.  Charles led the mainframe processor design team through the transitions into CMOS technology and into full 64-bit capability with z/Architecture. In 2003, he was appointed to the position of IBM Fellow, the highest technical honor within IBM.  Charles is currently responsible for the overall roadmap and strategy for IBM z Systems hardware. He holds numerous patents, four Outstanding Innovation Awards, and three IBM Corporate Awards.  He earned his B.S. and M.Eng. in Computer and Systems Engineering from Rensselaer Polytechnic Institute in 1982 and 1983."
+},{
+	"name": "John Thomas",
+	"title": "IBM Distinguished Engineer",
+	"image": "JohnThomas.png",
+	"topics": ["Overview of CAMS on z"],
+	"brief": "John J. Thomas is a Distinguished Engineer in IBM's Competitive Project Office (CPO). He is the Chief Architect for Competitive Projects in the areas of Cloud and platform selection. He provides technical direction to the team on multiple aspects of Cloud, spanning on-premises, off-premises and Hybrid models. John brings a scientific approach to IT economics that combines technical and business aspects of delivering workloads. John is a member of the prestigious IBM Academy of Technology. He has received multiple IBM Outstanding Technical Achievement Awards. Before coming to IBM, he worked in solution development for various industry sectors. John holds a Masters degree in Computer Engineering and a B.Tech degree in Electronics & Communication Engineering."
+},{
+	"name": "Michael Perera",
+	"title": "IBM Vice President, z Systems Software",
+	"image": "MichaelPerera.png",
+	"topics": ["z Systems Software Trends and Direction"],
+	"brief": "Mike Perera is currently the Vice President, z Systems Software, IBM Systems Unit, responsible for z Systems Software product management, development & support including application runtimes, Enterprise DevOps and z Systems Management & Optimization.  He previously held the position of Vice President, CICS, TPF and System z for IBM’s Application & Integration(AIM) Middleware Division, responsible for the AIM System z business, including product management and development for CICS, Transaction Processing Facility (TPF), Communications Server, CICS and Problem Determination Tools.  Previously, Mike was Director, DB2 for z/OS, where he was responsible for product management, development, level 2/3 support and quality assurance of one of IBM’s flagship products. \r\nPrior to his leadership roles in z Systems, Mike was Director, Workload Optimized Systems, where he was responsible for operations supporting the growth of the integrated IBM hardware, software and services offerings business, predominantly focused on Smart Analytics Systems.  In addition, Mike previously worked mergers & acquisitions for IBM, where he helped drive the acquisitions of Cognos, Princeton Softech and Solid Technologies.  Prior to that role, he spent 3 1/2 years holding a variety of positions within IBM's WebSphere Software division focused on telecommunications solutions.\r\n\r\nBefore joining IBM, Mike held project management, product management and consulting positions at various companies.  He earned his MBA from the University of North Carolina at Chapel Hill and an undergraduate degree in Applied Economics and Business Management from Cornell University.\r\n\r\nHe is married with a 3 kids who all keep him quite busy outside of work; however, he still enjoys sport fishing, golf, gourmet cooking, wine and traveling when he has a free moment."
+},{
+	"name": "饶卫雄",
+	"title": "同济大学教授",
+	"image": "WeixiongRao.png",
+	"topics": ["科研学术报告 – Big Data and Z"],
+	"brief": "饶卫雄，自2014年中期正式加入同济大学软件学院, 返回上海之前,曾在英国剑桥大学 计算机实验室(2013)、芬兰赫尔辛基大学计算科学系(2011-2012)和香港科技大学计算机科学与工程系(2010) 分别作副研究员和博士后研究。2005-2009年期间，在Ada Fu教授的指导下取得香港中文大学博士学位。在此之前，曾在工业界有接近多年的工作经验，此阶段受益颇多，学习了丰富的实际工程项目经验、掌握了大量的产品知识和技能。此前分别在北方交通大学和上海交通大学获得本科和硕士学位。\r\n\r\n目前需要在分布式系统、数据库系统和移动计算等方向拟招收多名同学，以在分布和移动场景进行有效力和有质量的数据内容处理。将会根据同学的个人兴趣，与海外的多个研究机构和工业界广泛合作，为同学提供良好的研究机会、工程实践和科研补贴"
+},{
+	"name": "王伟",
+	"title": "赞同科技副总经理兼研究院院长",
+	"image": "WangWei.png",
+	"topics": ["大型机在金融IT架构中的应用定位"],
+	"brief": "三十一年金融IT从业经验，曾在工商银行工作16年，赞同科技工作15年，曾在多个银行大型应用项目中担任架构师、项目经理、项目总监，主持公司多个平台产品和应用解决方案的研发，公司产品和解决方案总负责人。近年主持项目:在公司长期负责前端、前置平台产品和应用解决方案的研发和架构设计；江苏农信、上海农商、山东农信前端、前置项目总监、架构设计;赞同金融渠道服务整合平台架构设计;赞同金融业务云平台架构设计。"
+},{
+	"name": "张岳公",
+	"title": "三未信安董事长，总经理",
+	"image": "ZhangYueGong.png",
+	"topics": ["主机与国产加密设备的集成与合作"],
+	"brief": "博士，北京三未信安科技发展有限公司董事长/总经理。曾从事密码学、PKI技术研究工作多年，主持过多项国家科技部“863”项目、发改委产业化项目，2008年8月创办三未信安公司，领导三未信安迅速成为中国密码设备主流厂商。张岳公对中国的信息安全行业有较深的了解，对行业发展动态认识敏锐。"
+},{
+	"name": "黄颢",
+	"title": "中国工商银行数据中心（上海）资深经理",
+	"image": "HaoHuang.png",
+	"topics": ["同城双活技术实战经验分享"],
+	"brief": "黄颢，中国工商银行数据中心（上海）资深经理，主机系统架构师。他在主机DB2及系统架构设计和优化等领域有丰富的实践经验，是IBM主机DB2客户咨询委员会成员，2011、2012、2013年度IBM Champion，以及CDUG 2008、2009、2011、2013、2014演讲嘉宾。"
+},{
+	"name": "陈杰",
+	"title": "四川农信信息科技中心首席架构师，副总经理",
+	"image": "JieChen.png",
+	"topics": ["基于主机面向SOA架构的银行核心业务系统"],
+	"brief": "陈杰同志在1996年3月至2006年6月期间担任中联集团项目总监，2006年7月进入四川农信任信息科技中心副总经理，兼任首席架构师。主要负责四川农信产品管理领域、专业管理领域和技术路线、架构的规划与顶层设计，并推动落地实施。在银行研发领域有丰富经验，全程组织并完成了四川农信SC6000综合业务系统和SC6000z新一代核心业务系统的总体架构设计和开发上线，牵头制定了面向SOA模式的项目开发和管理规范等重要工作。"
+},{
+	"name": "刘琼",
+	"title": "IBM主机售前技术支持经理",
+	"topics": ["主机Linux在社保行业的实践分享"],
+	"image": "QiongLiu.png",
+	"brief": "刘琼博士于2006年加入IBM，十年来一直从事主机相关的技术支持工作，有着深厚的主机技术功底、丰富的行业和客户经验，目前负责中国主机区域客户的技术支持，为银行、社保、政府、企业等各行业的客户提供主机新产品、解决方案、技术咨询等全方位的主机技术支持。"
+}
+]
