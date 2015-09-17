@@ -22,23 +22,11 @@
 			<div id="speaker3" class="item"></div> -->
 		</div>
 
-		<div id="carousel-controls">
+		<div id="carousel-controls" align="center" hidden="hidden">
 			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-speakers"
-				data-slide="prev"> <span
-				class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<!-- <li data-target="#carousel-speakers" data-slide-to="0"
-					class="active"></li>
-				<li data-target="#carousel-spekaers" data-slide-to="1"></li>
-				<li data-target="#carousel-speakers" data-slide-to="2"></li> -->
-			</ol>
-			<a class="right carousel-control" href="#carousel-speakers"
-				data-slide="next"> <span
-				class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+			<button class="left btn" onclick='clickCarouselControl($(this))'><span class="glyphicon glyphicon-chevron-left"></span></button>
+			<button class="right active btn" onclick='clickCarouselControl($(this))'><span class="glyphicon glyphicon-chevron-right"></span></button>
+			</div>
  		</div>
 	</div>
 	<script src="js/jquery-1.11.1.min.js"></script>

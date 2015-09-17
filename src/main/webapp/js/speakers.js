@@ -23,6 +23,7 @@ $(document).ready(function() {
                 var item = $.tmpl(template, speaker);
                 item.appendTo('.carousel-inner');
             });
+            $('#carousel-controls').show();
         }).fail(function(e) {
         	console.log("error:" + JSON.stringify(e));
 			alert("名师风采信息加载失败！");
@@ -34,3 +35,13 @@ $(document).ready(function() {
 		alert("模板加载失败！");
 	})},500);
 });
+
+function clickCarouselControl(button){
+	if(button.hasClass('left')) {
+		$("#carousel-speakers").carousel("prev");
+	} else if(button.hasClass('right')) {
+		$("#carousel-speakers").carousel("next");
+	}
+	$('#carousel-controls button').removeClass('active');
+	button.addClass('active');
+}

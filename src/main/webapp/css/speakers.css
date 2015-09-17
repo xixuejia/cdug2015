@@ -14,32 +14,29 @@ body:after {
 	position: fixed;
 }
 
-.carousel-indicators li {
-	border-color: #337ab7;
-	margin: 10px;
-}
-
-.carousel-indicators .active {
-	background-color: #337ab7;
-	margin: 10px;
-}
-
-.carousel-indicators {
-	position: fixed;
-	bottom: 0;
-}
-
-.carousel-control.left, .carousel-control.right {
+#carousel-controls button {
 	background-image: none;
-	bottom: 0;
-	position: fixed;
+	background-color: grey;
+	color: white;
+	margin-left: 50px;
+	margin-rigth: 50px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	border-width: 0;
+	bottom: 100px;
+	height: 50px;
+	width: 50px;
+}
+
+#carousel-controls button.active {
+	background-color: #337ab7;
 }
 
 .glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
-	position: fixed;
-	bottom: 20px;
-	margin-left: -10px;
-	margin-right: 5px;
+	/* 	bottom: 20px; */
+	/* 	margin-left: -10px;
+	margin-right: 5px; */
+	
 }
 
 .img-circular {
