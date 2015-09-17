@@ -2,13 +2,20 @@
 	<div align='center'>
 		<img src='img/speakers/${image}' class='img-circular'></img>
 	</div>
-	<h3 align='center'>${name}</h3>
-	<h5 align='center'>${title}</h5>
-	<p>${brief}</p>
+	<h3 align='center' class="speakerName">${name}</h3>
+	{{if sponsor}}
+		{{if sponsor === true}}
+			<h4 align='center' class="sponsor">Executive Sponsor</h3>
+		{{/if}}
+	{{/if}}
+	<h5 align='center' class="speakerTitle">${title}</h5>
+	{{each brief}}
+	<p class="brief">${$value}</p>
+	{{/each}}
 	<br>
 	{{if topics}}
 	{{if topics.length >= 1}}
-	<p>演讲题目</p>
+	<p><image class="topic" src="img/topic.png"></image> 演讲题目</p>
 	{{/if}}
 	{{/if}}
 	<div>
@@ -24,5 +31,7 @@
 			{{/if}}
 		{{/if}}
 	</div>
-	<br>
+	<div align="center">
+		<a href="http://cdug.tongji.edu.cn/2015/speaker.html">查看更多名师 请点击</a>
+	</div>
 </div>

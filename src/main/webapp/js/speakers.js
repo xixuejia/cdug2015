@@ -37,11 +37,20 @@ $(document).ready(function() {
 });
 
 function clickCarouselControl(button){
+	$(window).scrollTop(0);
 	if(button.hasClass('left')) {
+		$("#carousel-speakers .left.inactive").hide();
+		$("#carousel-speakers .right.active").hide();
+		$("#carousel-speakers .left.active").show();
+		$("#carousel-speakers .right.inactive").show();
 		$("#carousel-speakers").carousel("prev");
 	} else if(button.hasClass('right')) {
-		$("#carousel-speakers").carousel("next");
+		$("#carousel-speakers .left.active").hide();
+		$("#carousel-speakers .right.inactive").hide();
+		$("#carousel-speakers .left.inactive").show();
+		$("#carousel-speakers .right.active").show();
+		$("#carousel-speakers").carousel("next");	
 	}
-	$('#carousel-controls button').removeClass('active');
-	button.addClass('active');
+//	$('#carousel-controls button').removeClass('active');
+//	button.addClass('active');
 }
